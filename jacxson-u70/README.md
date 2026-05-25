@@ -53,8 +53,8 @@ Each of the four lifting arms consists of three rigid bodies:
 
 ```mermaid
 flowchart LR
-    Chassis[Chassis 0] -->|Pivot O| Arm1[Secondary Arm 1<br>m₁=135 kg]
-    Arm1 -->|Pivot B| Arm2[Main Arm 2<br>m₂=180 kg]
+    Chassis[Chassis 0] -->|Pivot O| Arm1[Secondary Arm 1<br>m1=135 kg]
+    Arm1 -->|Pivot B| Arm2[Main Arm 2<br>m2=180 kg]
     Arm2 -->|Pivot C| Load[Engine Load<br>M_ch=1750 kg]
 
     Chassis -->|Pivot M| CylBody[Cylinder Body 3]

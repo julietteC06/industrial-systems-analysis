@@ -130,10 +130,10 @@ $$H_2(p) = \frac{1 + 0.2p}{(1 + 0.1p)^2}$$
 
 ```mermaid
 flowchart TD
-    A[Runway Input<br>z_p(t)] --> B[H₂(p)<br>Shock Absorber]
-    B --> C[z_a(t)<br>Cabin Displacement]
-    C --> D[H₃(p)<br>Acceleration Filter]
-    D --> E[¨z_a(t)<br>Passenger Acceleration]
+    A[Runway Input<br>zp(t)] --> B[H2(p)<br>Shock Absorber]
+    B --> C[za(t)<br>Cabin Displacement]
+    C --> D[H3(p)<br>Acceleration Filter]
+    D --> E[za_ddot(t)<br>Passenger Acceleration]
 
     F[Norm NF E90-401-2<br>Human Vibration Tolerance] -.->|constrains| E
 ```
@@ -162,14 +162,14 @@ $H_2(p) \to 0$ — the suspension effectively isolates the cabin from high-frequ
 flowchart TD
     subgraph Impact["Landing Impact Requirements"]
         I1[Large stroke needed<br>to absorb energy]
-        I2[Critical damping ξ=1<br>to avoid bouncing]
+        I2[Critical damping xi=1<br>to avoid bouncing]
         I3[Low K preferred<br>for energy absorption]
     end
 
     subgraph Taxiing["Taxiing Comfort Requirements"]
         T1[High damping amplifies<br>mid-frequency vibrations]
-        T2[Low ξ preferred<br>for vibration isolation]
-        T3[ω₀ constrained by<br>human physiology: 1.6 Hz]
+        T2[Low xi preferred<br>for vibration isolation]
+        T3[omega_0 constrained by<br>human physiology: 1.6 Hz]
     end
 
     I1 <-->|"in tension with"| T3

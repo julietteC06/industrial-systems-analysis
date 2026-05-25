@@ -54,7 +54,7 @@ flowchart TD
     BallScrew -->|linear| Cowl[Translating Cowl]
     Cowl --> BlockerDoors[Blocker Doors<br>via kinematic linkage]
 
-    Encoder[Incremental Encoder] -->|θ_m feedback| TRCU
+    Encoder[Incremental Encoder] -->|theta_m feedback| TRCU
     RVDT[RVDT ×4] -->|sync check| TRCU
 ```
 
@@ -129,8 +129,8 @@ flowchart LR
     SUM1 -->|"1/(R+Lp)"| I[I]
     I -->|"K_m"| Cm[C_m]
     Cm --> SUM2((+))
-    SUM2 -->|"1/(J_m·p)"| Omega[Ω_m]
-    Omega -->|"K_m"| E[E]
+    SUM2 -->|"1/(Jm*p)"| Omega[Omega_m]
+    Omega -->|"Km"| E[E]
     E -->|-| SUM1
 
     Cr[C_r<br>resistance torque] -->|-| SUM2

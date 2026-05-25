@@ -14,21 +14,21 @@ A DELTA robot is a parallel-arm manipulator widely used in high-speed pick-and-p
 
 ```mermaid
 flowchart TD
-    User[User Input<br>θ_c setpoint] --> Converter[Angle-to-Voltage<br>Converter K_pot]
-    Converter --> Sum1((Σ))
-    Sum1 -->|ε_pos| C[Position Controller<br>C(p)]
-    C --> Sum2((Σ))
-    Sum2 -->|ε_vel| A[Amp Gain<br>A]
-    A -->|U_m| Motor[DC Motor<br>H_m(p)]
-    Motor -->|Ω_m| Reducer[Reducer<br>1/N]
-    Reducer -->|Ω_cardan| Cardan[Cardan Joints<br>T(p)=1]
-    Cardan -->|θ_p| Output[Gripper Angle θ_p]
+    User[User Input<br>theta_c setpoint] --> Converter[Angle-to-Voltage<br>Converter K_pot]
+    Converter --> Sum1((SUM))
+    Sum1 -->|eps_pos| C[Position Controller<br>C(p)]
+    C --> Sum2((SUM))
+    Sum2 -->|eps_vel| A[Amp Gain<br>A]
+    A -->|Um| Motor[DC Motor<br>Hm(p)]
+    Motor -->|Omega_m| Reducer[Reducer<br>1/N]
+    Reducer -->|Omega_cardan| Cardan[Cardan Joints<br>T(p)=1]
+    Cardan -->|theta_p| Output[Gripper Angle theta_p]
     
-    Motor -->|Ω_m| Tacho[Tachometer<br>K_ω]
-    Tacho -->|U_ω| Sum2
-    Motor -->|Ω_m| Integrator[1/p]
-    Integrator -->|θ_m| EncoderConv[Encoder + DAC<br>K_pos]
-    EncoderConv -->|U_θ| Sum1
+    Motor -->|Omega_m| Tacho[Tachometer<br>K_omega]
+    Tacho -->|U_omega| Sum2
+    Motor -->|Omega_m| Integrator[1/p]
+    Integrator -->|theta_m| EncoderConv[Encoder + DAC<br>K_pos]
+    EncoderConv -->|U_theta| Sum1
 ```
 
 The architecture uses **cascade control**:
