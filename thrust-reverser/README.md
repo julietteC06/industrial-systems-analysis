@@ -154,7 +154,7 @@ Motor torque $C_m = K_m \cdot i(t)$ — so controlling current **is** controllin
 ```mermaid
 flowchart LR
     Ic[I_c<br>current setpoint] --> SUM1((+))
-    SUM1 -->|ε| C[PI Controller<br>C(p)]
+    SUM1 -->|ε| C["PI Controller<br>C(p)"]
     C -->|U_cmd| Ka[K_a<br>adapter]
     Ka -->|U_m| Motor[Motor<br>locked rotor]
     Motor -->|I| Re[R_e<br>current sensor]

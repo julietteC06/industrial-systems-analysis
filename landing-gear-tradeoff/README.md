@@ -130,10 +130,10 @@ $$H_2(p) = \frac{1 + 0.2p}{(1 + 0.1p)^2}$$
 
 ```mermaid
 flowchart TD
-    A[Runway Input<br>zp(t)] --> B[H2(p)<br>Shock Absorber]
-    B --> C[za(t)<br>Cabin Displacement]
-    C --> D[H3(p)<br>Acceleration Filter]
-    D --> E[za_ddot(t)<br>Passenger Acceleration]
+    A["Runway Input<br>zp(t)"] --> B["H2(p)<br>Shock Absorber"]
+    B --> C["za(t)<br>Cabin Displacement"]
+    C --> D["H3(p)<br>Acceleration Filter"]
+    D --> E["za_ddot(t)<br>Passenger Acceleration"]
 
     F[Norm NF E90-401-2<br>Human Vibration Tolerance] -.->|constrains| E
 ```

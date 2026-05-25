@@ -16,12 +16,12 @@ A DELTA robot is a parallel-arm manipulator widely used in high-speed pick-and-p
 flowchart TD
     User[User Input<br>theta_c setpoint] --> Converter[Angle-to-Voltage<br>Converter K_pot]
     Converter --> Sum1((SUM))
-    Sum1 -->|eps_pos| C[Position Controller<br>C(p)]
+    Sum1 -->|eps_pos| C["Position Controller<br>C(p)"]
     C --> Sum2((SUM))
     Sum2 -->|eps_vel| A[Amp Gain<br>A]
-    A -->|Um| Motor[DC Motor<br>Hm(p)]
+    A -->|Um| Motor["DC Motor<br>Hm(p)"]
     Motor -->|Omega_m| Reducer[Reducer<br>1/N]
-    Reducer -->|Omega_cardan| Cardan[Cardan Joints<br>T(p)=1]
+    Reducer -->|Omega_cardan| Cardan["Cardan Joints<br>T(p)=1"]
     Cardan -->|theta_p| Output[Gripper Angle theta_p]
     
     Motor -->|Omega_m| Tacho[Tachometer<br>K_omega]
