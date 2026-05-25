@@ -16,7 +16,7 @@ As a technical sales engineer, the core skill is not writing production code —
 | # | System | Key Insight | Domain |
 |---|--------|------------|--------|
 | 1 | [Aircraft Landing Gear Shock Absorber](./landing-gear-tradeoff/) | The same spring-damper system cannot be simultaneously optimized for landing impact and taxiing comfort — an inherent tradeoff driven by human physiology and airframe constraints | Aerospace / Mechanical |
-| 2 | eTras Electrical Thrust Reverser (Safran) | *coming soon* | Aerospace / Electromechanical |
+| 2 | [eTras Electrical Thrust Reverser (Safran)](./thrust-reverser/) | The hydraulic-to-electric transition in a safety-critical engine nacelle — why eliminating flammable fluid from a fire zone is the decisive factor, and how PI current control makes it work | Aerospace / Electromechanical |
 | 3 | DELTA Robot Gripper Orientation Axis | *coming soon* | Robotics / Control Systems |
 | 4 | JacXson U70 Aircraft Engine Maintenance Chariot | *coming soon* | Industrial Equipment / Mechatronics |
 
