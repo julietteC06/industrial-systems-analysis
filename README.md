@@ -18,7 +18,7 @@ As a technical sales engineer, the core skill is not writing production code —
 | 1 | [Aircraft Landing Gear Shock Absorber](./landing-gear-tradeoff/) | The same spring-damper system cannot be simultaneously optimized for landing impact and taxiing comfort — an inherent tradeoff driven by human physiology and airframe constraints | Aerospace / Mechanical |
 | 2 | [eTras Electrical Thrust Reverser (Safran)](./thrust-reverser/) | The hydraulic-to-electric transition in a safety-critical engine nacelle — why eliminating flammable fluid from a fire zone is the decisive factor, and how PI current control makes it work | Aerospace / Electromechanical |
 | 3 | [DELTA Robot Gripper Orientation Axis](./delta-robot/) | The stability-precision-speed trilemma in cascade servo control — how increasing gain improves bandwidth and precision but erodes phase margin, and why a simple proportional controller can fail to satisfy all three specs simultaneously | Robotics / Control Systems |
-| 4 | JacXson U70 Aircraft Engine Maintenance Chariot | *coming soon* | Industrial Equipment / Mechatronics |
+| 4 | [JacXson U70 Aircraft Engine Maintenance Chariot](./jacxson-u70/) | Motor sizing from first principles — how the kinetic energy theorem decomposes motor torque into acceleration, configuration-dependent inertia, and gravity terms, and why thermal equivalent torque (not peak torque) is the binding constraint in repetitive duty cycles | Industrial Equipment / Mechatronics |
 
 ## Format
 
