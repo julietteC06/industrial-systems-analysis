@@ -4,6 +4,8 @@
 
 An aircraft landing gear shock absorber serves two conflicting missions: **(1) absorb the violent impact of landing** without damaging the airframe, and **(2) filter runway irregularities during taxiing** for passenger comfort. This analysis demonstrates, through transfer function modeling and frequency-domain analysis, that these two requirements pull the same design parameters in opposite directions. A shock absorber optimized for landing impact will necessarily compromise taxiing comfort — and vice versa. Understanding this tradeoff is fundamental to landing gear design and illustrates a broader engineering principle: **multi-mission systems rarely have a single optimal configuration.**
 
+> **Python simulation:** [simulation.ipynb](./simulation.ipynb) — Jupyter notebook with impulse response, Bode diagrams, passenger comfort analysis, and interactive parameter sweep. Open in VS Code, Jupyter Lab, or view directly on GitHub.
+
 ---
 
 ## 1. System Context
