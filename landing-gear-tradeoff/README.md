@@ -286,9 +286,9 @@ With $\xi = 1$, the impulse response shows no oscillation and the fastest possib
 
 ## References
 
-- Exercise adapted from F. Mathurin, Industrial Science curriculum, Beihang University Sino-French Engineering Program
-- NF E90-401-2: Mechanical vibration and shock — Evaluation of human exposure to whole-body vibration
-- MATLAB Simulink models used for time-domain and frequency-domain simulation
+- NF E90-401-2: Mechanical vibration and shock — Evaluation of human exposure to whole-body vibration (AFNOR)
+- Boeing 787 landing gear system technical documentation (public domain excerpts)
+- Python simulation: scipy.signal, matplotlib — see [simulation.ipynb](./simulation.ipynb)
 
 ---
 

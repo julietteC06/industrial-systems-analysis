@@ -325,9 +325,10 @@ The compensated open-loop is a pure integrator — guaranteeing **zero steady-st
 
 ## References
 
-- Safran Nacelles, eTras product documentation
-- TD Correction — Étude de l'asservissement de la chaîne de transmission de puissance, Département Sciences Industrielles, Beihang University / Sino-French Engineering Program
-- More Electric Aircraft (MEA) initiative, Boeing 787 and Airbus A380 electrical architecture whitepapers
+- Safran Nacelles — eTras product brochure and public technical documentation
+- Safran technical publications: Electrical Thrust Reverser Actuation System overview
+- More Electric Aircraft (MEA) initiative — Boeing 787 and Airbus A380 electrical architecture whitepapers
+- DC motor control theory: standard servo-loop design references (PI compensation, pole-zero cancellation)
 
 ---
 

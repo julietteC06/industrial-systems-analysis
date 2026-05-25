@@ -29,9 +29,9 @@ Each analysis is a self-contained Markdown document with:
 - Explicit discussion of design tradeoffs and constraints
 - References to real standards and specifications
 
-## Background
+## How these analyses are built
 
-These analyses are based on coursework from the Sino-French Engineering Program (中法工程师培养项目) at Beihang University's Industrial Science (Sciences Industrielles) curriculum. The original exercises were designed by aerospace engineering faculty and adapted from real industrial systems in partnership with companies like Safran and Excent.
+Each analysis is produced by studying publicly available technical documentation, product specifications, and engineering standards — then applying first-principles modeling to understand the system's architecture, behavior, and design constraints. All simulations are written in Python (scipy + matplotlib) and are fully reproducible.
 
 ## Contact
 
